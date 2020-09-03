@@ -1,0 +1,109 @@
+@import "/home/josh/.cache/wal/colors.css";
+
+@font-face {
+    font-family: "Hack";
+    src: url("/home/josh/.fonts/ttf/Hack-Regular.ttf");
+}
+
+
+html {
+    font-size: 18px;
+    background: var(--wallpaper) !important;
+    font-weight: bold; 
+}
+
+body {
+    background-image: var(--wallpaper) !important;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background: var(--color0); 
+    opacity: .65; 
+    padding: 20px; 
+}
+
+.prompt {
+    color: var(--color15);
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.prompt~.prompt {
+    padding: 1.5rem 0 0.3125rem;
+}
+
+span {
+    color: var(--color15);
+}
+
+h1 {
+    display: inline;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color15);
+}
+
+.tree > ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 2.5rem;
+}
+
+li {
+    position: relative;
+}
+
+li::before, li::after {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+}
+
+li::before {
+    border-top: 1px solid #a7a9be;
+    top: 0.75rem;
+    width: 0.5rem;
+}
+
+li::after {
+    border-left: 1px solid #a7a9be;
+    height: 100%;
+    top: 0.25rem;
+}
+
+li:last-child::after {
+    height: 0.5rem;
+}
+
+a {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--foreground);
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: var(--background);
+    background: var(--color7);
+}
+
+form h1 {
+    padding-left: 0.125rem;
+}
+
+input {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--color15);
+    background-color: var(--color0);
+    border: none;
+}
